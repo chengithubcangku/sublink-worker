@@ -936,7 +936,7 @@ const customRuleFunctions = `
       </div>
       <div class="mb-2">
         <label class="form-label">域名后缀</label>
-        <input type="text" class="form-control mb-2" name="customRuleDomainSuffix[]" placeholder="域名后缀 (c逗号分隔parated)">
+        <input type="text" class="form-control mb-2" name="customRuleDomainSuffix[]" placeholder="域名后缀 (c逗号分隔)">
       </div>
       <div class="mb-2">
         <label class="form-label">域名关键字</label>
