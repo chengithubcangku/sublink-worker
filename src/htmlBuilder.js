@@ -690,7 +690,7 @@ const generateRuleSetSelection = () => `
     </div>
 
     <div class="content-container mb-3">
-      <label for="predefinedRules" class="form-label">Rule Sets:</label>
+      <label for="predefinedRules" class="form-label">规则:</label>
       <select class="form-select" id="predefinedRules" onchange="applyPredefinedRules()">
         <option value="custom">自定义规则</option>
         <option value="minimal">最小规则</option>
