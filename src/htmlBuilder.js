@@ -639,7 +639,7 @@ const shortenAllUrlsFunction = () => `
       alert('Failed to shorten URLs. Please try again.');
     } finally {
       shortenButton.disabled = false;
-      shortenButton.innerHTML = '<i class="fas fa-compress-alt me-2"></i>Shorten Links';
+      shortenButton.innerHTML = '<i class="fas fa-compress-alt me-2"></i>生成短域';
     }
   }
 `;
