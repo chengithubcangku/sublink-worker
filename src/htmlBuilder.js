@@ -946,7 +946,7 @@ const customRuleFunctions = `
         <label class="form-label">IP 地址域路由</label>
         <input type="text" class="form-control mb-2" name="customRuleIPCIDR[]" placeholder="IP CIDR (逗号分隔)">
       </div>
-      <button type="button" class="btn btn-danger btn-sm" onclick="removeCustomRule(this)">Remove</button>
+      <button type="button" class="btn btn-danger btn-sm" onclick="removeCustomRule(this)">删除</button>
     \`;
     customRulesDiv.appendChild(newRuleDiv);
   }
