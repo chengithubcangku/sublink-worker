@@ -542,7 +542,7 @@ const customPathFunctions = () => `
   function updateSavedPathsDropdown() {
     const savedPaths = JSON.parse(localStorage.getItem('savedCustomPaths') || '[]');
     const dropdown = document.getElementById('savedCustomPaths');
-    dropdown.innerHTML = '<option value="">Saved paths</option>';
+    dropdown.innerHTML = '<option value="">已生成的短域</option>';
     savedPaths.forEach(path => {
       const option = document.createElement('option');
       option.value = path;
