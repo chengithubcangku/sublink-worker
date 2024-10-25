@@ -468,17 +468,17 @@ const generateForm = () => `
 
 const generateSubscribeLinks = (xrayUrl, singboxUrl, clashUrl, baseUrl) => `
   <div class="mt-5">
-    <h2 class="mb-4">Your subscribe links:</h2>
-    ${generateLinkInput('Xray Link:', 'xrayLink', xrayUrl)}
-    ${generateLinkInput('SingBox Link:', 'singboxLink', singboxUrl)}
-    ${generateLinkInput('Clash Link:', 'clashLink', clashUrl)}
+    <h2 class="mb-4">您的订阅链接:</h2>
+    ${generateLinkInput('Xray 订阅链接:', 'xrayLink', xrayUrl)}
+    ${generateLinkInput('SingBox 订阅链接:', 'singboxLink', singboxUrl)}
+    ${generateLinkInput('Clash 订阅链接:', 'clashLink', clashUrl)}
     <div class="mb-3">
-      <label for="customShortCode" class="form-label">Custom Path (optional):</label>
+      <label for="customShortCode" class="form-label">自定义短域:</label>
       <div class="input-group flex-nowrap">
         <span class="input-group-text text-truncate" style="max-width: 400px;" title="${baseUrl}/s/">
           ${baseUrl}/s/
         </span>
-        <input type="text" class="form-control" id="customShortCode" placeholder="e.g. my-custom-link">
+        <input type="text" class="form-control" id="customShortCode" placeholder="自定义短域后缀">
         <select id="savedCustomPaths" class="form-select" style="max-width: 200px;">
           <option value="">Saved paths</option>
         </select>
@@ -489,7 +489,7 @@ const generateSubscribeLinks = (xrayUrl, singboxUrl, clashUrl, baseUrl) => `
     </div>
     <div class="d-grid">
       <button class="btn btn-primary btn-lg" type="button" onclick="shortenAllUrls()">
-        <i class="fas fa-compress-alt me-2"></i>Shorten Links
+        <i class="fas fa-compress-alt me-2"></i>生成短域
       </button>
     </div>
   </div>
@@ -596,7 +596,7 @@ const copyToClipboardFunction = () => `
     
     const button = element.nextElementSibling;
     const originalText = button.innerHTML;
-    button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    button.innerHTML = '<i class="fas fa-check"></i> 复制!';
     button.classList.remove('btn-outline-secondary');
     button.classList.add('btn-success');
     setTimeout(() => {
@@ -984,7 +984,7 @@ const generateQRCodeFunction = () => `
       modal.innerHTML = \`
         <div class="qr-card">
           <img src="\${qrImage}" alt="QR Code">
-          <p>Scan QR Code</p>
+          <p>订阅二维码</p>
         </div>
       \`;
 
