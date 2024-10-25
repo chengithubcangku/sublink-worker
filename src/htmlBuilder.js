@@ -438,19 +438,19 @@ const generateGithubLink = () => `
 
 const generateCardHeader = () => `
   <div class="card-header text-center">
-    <h1 class="display-4 mb-0">Sublink Worker</h1>
+    <h1 class="display-4 mb-0">订阅信息转换工具</h1>
   </div>
 `;
 
 const generateForm = () => `
   <form method="POST" id="encodeForm">
     <div class="mb-4">
-      <label for="inputTextarea" class="form-label">Enter Your Share URLs:</label>
+      <label for="inputTextarea" class="form-label"输入您的分享 URL:</label>
       <textarea class="form-control" id="inputTextarea" name="input" required placeholder="vmess://abcd..." rows="3"></textarea>
     </div>
     <div class="form-check form-switch mb-3">
       <input class="form-check-input" type="checkbox" id="advancedToggle">
-      <label class="form-check-label" for="advancedToggle">Advanced Options</label>
+      <label class="form-check-label" for="advancedToggle">高级功能</label>
     </div>
     <div id="advancedOptions">
       ${generateRuleSetSelection()}
